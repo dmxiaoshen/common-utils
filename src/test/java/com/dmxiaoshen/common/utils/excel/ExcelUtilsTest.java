@@ -13,7 +13,7 @@ public class ExcelUtilsTest {
     @Test
     public void importExcel() throws Exception {
         URL path = this.getClass().getResource("/");
-        File file = new File(path.getFile()+File.separator+"黑名单统计表4.xls");
+        File file = new File(path.getFile() + File.separator + "黑名单统计表4.xls");
         List<String[][]> result = ExcelUtils.importExcel(file);
         System.out.println(result.size());
     }
