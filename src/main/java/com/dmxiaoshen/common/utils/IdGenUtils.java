@@ -688,7 +688,8 @@ public class IdGenUtils {
         Map<String,Object> result = JacksonUtils.toJavaBean(jsonObject.toString(),Map.class);
 //        System.out.println("----------------------"+jsonNode.size());
 //        System.out.println(JacksonUtils.toJson(jsonNode));
-        System.out.println("---------"+result.size());
-        System.out.println(JacksonUtils.toJson(result));
+//        System.out.println("---------"+result.size());
+//        System.out.println(JacksonUtils.toJson(result));
+        System.out.println(JacksonUtils.toJson(jsonObject));//直接拿jsonObject对象来转成json字符串会报错，必须调用jsonObject.toString()方法
     }
 }
